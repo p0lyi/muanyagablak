@@ -1,0 +1,39 @@
+
+$color: dimgrey;
+$corner-bevel: 100;
+
+.container-fluid{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand{
+  margin-left: 3%;
+}
+
+.arajanlat{
+  background-color: dimgrey;
+  padding: 2%;
+  color: white;
+  font-size: larger;
+}
+
+.trapezoid {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 100%);
+  padding-left: 15%;
+  border: red solid;
+}
+
+
+
+
+
+
+
+
+
+
