@@ -12,4 +12,19 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openCity(evt: MouseEvent, cityName: string): void {
+    let i: number;
+    let tabcontent: HTMLCollectionOf<Element> = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      (tabcontent[i] as HTMLElement).style.display = "none";
+    }
+    let tablinks: HTMLCollectionOf<Element> = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      (tablinks[i] as HTMLElement).className = (tablinks[i] as HTMLElement).className.replace(" active", "");
+    }
+    (document.getElementById(cityName) as HTMLElement).style.display = "block";
+    // @ts-ignore
+    evt.currentTarget.className += " active";
+  }
+
 }
