@@ -10,9 +10,10 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementById("defaultOpen")?.click();
   }
 
-  openCity(evt: MouseEvent, cityName: string): void {
+  openCity(evt: any, cityName: string): void {
     let i: number;
     let tabcontent: HTMLCollectionOf<Element> = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -23,8 +24,8 @@ export class HomeComponent implements OnInit {
       (tablinks[i] as HTMLElement).className = (tablinks[i] as HTMLElement).className.replace(" active", "");
     }
     (document.getElementById(cityName) as HTMLElement).style.display = "block";
-    // @ts-ignore
     evt.currentTarget.className += " active";
+
   }
 
 }
