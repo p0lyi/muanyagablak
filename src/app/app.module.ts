@@ -10,7 +10,8 @@ import {MainTabComponent} from './comonents/tabs/main-tab/main-tab.component';
 import {AppMaterialModule} from "./app.material.module";
 import {TabBannerComponent} from "./comonents/banner/tab-banner/tab-banner.component";
 import {ProductionComponent} from "./comonents/tabs/plastic-windows/production/production.component";
-import {PlasticPageComponent} from "./comonents/tabs/plastic-windows/plastic-page.component";
+import {PlasticPageComponent} from "./comonents/tabs/plastic-windows/production/plastic-page.component";
+import {WindowsComponent} from "./comonents/tabs/plastic-windows/windows/windows.component";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {PlasticPageComponent} from "./comonents/tabs/plastic-windows/plastic-pag
     MainTabComponent,
     TabBannerComponent,
     ProductionComponent,
-    PlasticPageComponent
+    PlasticPageComponent,
+    WindowsComponent
   ],
   imports: [
     BrowserModule,

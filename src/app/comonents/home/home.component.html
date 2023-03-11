@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <div class="tab">
     <button class="tablinks" (click)="openCity($event, 'main')" id="defaultOpen">Főoldal</button>
-    <button class="tablinks" (click)="openCity($event, 'windows')">Műanyag ablak gyártása</button>
-    <button class="tablinks" (click)="openCity($event, 'Tokyo')">Tokyo</button>
+    <button class="tablinks" (click)="openCity($event, 'windows-prod')">Műanyag ablak gyártása</button>
+    <button class="tablinks" (click)="openCity($event, 'windows')">Műanyag ablakok</button>
     <app-tab-banner></app-tab-banner>
   </div>
 
@@ -12,15 +12,15 @@
     <br>
   </div>
 
-  <div id="windows" class="tabcontent">
+  <div id="windows-prod" class="tabcontent">
     <h1 style="color: #737c84">Műanyag nyílászárók gyártása</h1>
     <app-plastic-page></app-plastic-page>
     <br>
   </div>
 
-  <div id="Tokyo" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
+  <div id="windows" class="tabcontent">
+    <h1 style="color: #737c84">Műanyag ablakok</h1>
+    <app-windows></app-windows>
   </div>
 </div>
 
