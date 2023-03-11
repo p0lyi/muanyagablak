@@ -1,19 +1,21 @@
 <div class="container-fluid">
   <div class="tab">
     <button class="tablinks" (click)="openCity($event, 'main')" id="defaultOpen">Főoldal</button>
-    <button class="tablinks" (click)="openCity($event, 'Paris')">Paris</button>
+    <button class="tablinks" (click)="openCity($event, 'windows')">Műanyag ablak gyártása</button>
     <button class="tablinks" (click)="openCity($event, 'Tokyo')">Tokyo</button>
-
+    <app-tab-banner></app-tab-banner>
   </div>
 
-  <div id="main" class="tabcontent" >
-    <h3>Főoldal</h3>
+  <div id="main" class="tabcontent">
+    <h1 style="color: #737c84">Főoldal</h1>
     <app-main-tab></app-main-tab>
+    <br>
   </div>
 
-  <div id="Paris" class="tabcontent">
-    <h3>Paris</h3>
-    <p>Paris is the capital of France.</p>
+  <div id="windows" class="tabcontent">
+    <h1 style="color: #737c84">Műanyag nyílászárók gyártása</h1>
+    <app-plastic-page></app-plastic-page>
+    <br>
   </div>
 
   <div id="Tokyo" class="tabcontent">
