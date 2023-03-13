@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlasticPageComponent implements OnInit {
 
-  constructor() { }
+  ngOnInit() {
 
-  ngOnInit(): void {
   }
-
 }

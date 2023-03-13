@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-main-tab',
   templateUrl: './main-tab.component.html',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainTabComponent implements OnInit {
 
-  constructor() { }
+  ngOnInit() {
 
-  ngOnInit(): void {
   }
 
 }

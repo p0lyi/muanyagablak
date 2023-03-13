@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-home',
@@ -26,6 +27,9 @@ export class HomeComponent implements OnInit {
     (document.getElementById(cityName) as HTMLElement).style.display = "block";
     evt.currentTarget.className += " active";
 
+    //beuszas
+    AOS.init();
+    window.addEventListener('load',AOS.refresh);
   }
 
 }

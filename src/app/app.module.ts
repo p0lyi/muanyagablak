@@ -9,7 +9,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MainTabComponent} from './comonents/tabs/main-tab/main-tab.component';
 import {AppMaterialModule} from "./app.material.module";
 import {TabBannerComponent} from "./comonents/banner/tab-banner/tab-banner.component";
-import {ProductionComponent} from "./comonents/tabs/plastic-windows/production/production.component";
 import {PlasticPageComponent} from "./comonents/tabs/plastic-windows/production/plastic-page.component";
 import {WindowsComponent} from "./comonents/tabs/plastic-windows/windows/windows.component";
 
@@ -21,7 +20,6 @@ import {WindowsComponent} from "./comonents/tabs/plastic-windows/windows/windows
     HomeComponent,
     MainTabComponent,
     TabBannerComponent,
-    ProductionComponent,
     PlasticPageComponent,
     WindowsComponent
   ],
@@ -29,7 +27,8 @@ import {WindowsComponent} from "./comonents/tabs/plastic-windows/windows/windows
     BrowserModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+
   ],
   exports: [],
   providers: [],
