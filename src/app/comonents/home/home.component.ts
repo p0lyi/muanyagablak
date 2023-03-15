@@ -1,10 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import * as AOS from "aos";
+import {MatDialog} from "@angular/material/dialog";
+import {ModalComponent} from "../tabs/plastic-windows/windows/modal/modal.component";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
 

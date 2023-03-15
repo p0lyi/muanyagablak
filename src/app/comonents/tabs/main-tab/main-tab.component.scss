@@ -16,6 +16,7 @@
 .home-card {
   border-radius: 4px;
   padding: 0;
+  box-shadow: none !important;
 
   .mat-card-image {
     margin: 0;
@@ -25,6 +26,7 @@
   .home-card-content {
     display: flex;
     justify-content: space-between;
+    font-size: large;
 
     & > * {
       display: flex;
@@ -41,7 +43,6 @@
         flex-direction: column;
         align-items: start;
         padding-left: 2%;
-        padding-right: 10%;
         text-align: justify;
       }
     }
@@ -66,7 +67,7 @@ hr{
 }
 
 .redony{
-  width: 30%;
+  width: 40%;
 }
 
 .parkany{
@@ -74,10 +75,17 @@ hr{
 }
 
 .arnyek{
-  width: 40%;
+  width: 55%;
 }
 
 .parkany-p{
-  padding-right: 10%;
   text-align: justify;
+}
+
+.fokep{
+  width: 200%;
+}
+
+.main-title{
+
 }

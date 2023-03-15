@@ -11,6 +11,8 @@ import {AppMaterialModule} from "./app.material.module";
 import {TabBannerComponent} from "./comonents/banner/tab-banner/tab-banner.component";
 import {PlasticPageComponent} from "./comonents/tabs/plastic-windows/production/plastic-page.component";
 import {WindowsComponent} from "./comonents/tabs/plastic-windows/windows/windows.component";
+import {ModalComponent} from "./comonents/tabs/plastic-windows/windows/modal/modal.component";
+import {DoorsComponent} from "./comonents/tabs/doors/doors/doors.component";
 
 @NgModule({
   declarations: [
@@ -21,14 +23,15 @@ import {WindowsComponent} from "./comonents/tabs/plastic-windows/windows/windows
     MainTabComponent,
     TabBannerComponent,
     PlasticPageComponent,
-    WindowsComponent
+    WindowsComponent,
+    ModalComponent,
+    DoorsComponent
   ],
   imports: [
     BrowserModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    AppMaterialModule,
-
+    AppMaterialModule
   ],
   exports: [],
   providers: [],

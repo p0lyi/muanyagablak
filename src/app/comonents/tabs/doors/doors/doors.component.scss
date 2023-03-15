@@ -1,0 +1,19 @@
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+img{
+  height: 450px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

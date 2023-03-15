@@ -16,7 +16,8 @@ body {font-family: "Lato", sans-serif;}
   float: left;
   border: 1px solid #ccc;
   background-color: #737c84;
-  width: 21%;
+  width: 23%;
+  margin-top: 1%;
 }
 
 /* Style the buttons inside the tab */
@@ -47,15 +48,16 @@ body {font-family: "Lato", sans-serif;}
 
 /* Style the tab content */
 .tabcontent {
+  margin-top: 1%;
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: 79%;
+  width: 77%;
   border-left: none;
 }
 
 .container-fluid{
-  margin-top: 1%;
   overflow: hidden;
 }
+
 

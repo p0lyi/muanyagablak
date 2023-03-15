@@ -7,8 +7,8 @@
 }
 
 .logo{
-  min-width: 50%;
-  max-width: 55%;
+  min-width: 55%;
+  max-width: 70%;
 }
 
 .navbar-brand{
@@ -16,11 +16,11 @@
 }
 
 .arajanlat{
-  background-color: rgb(87, 87, 90);
-  padding: 1%;
+  padding: 4%;
   color: white;
   font-size: larger;
-  width: 100%;
+  width: 235px;
+  text-align: start;
 }
 
 .trapezoid {
@@ -28,6 +28,7 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 100%);
   padding-left: 25%;
   border: solid #eb1d25;
+  background-color: rgb(87, 87, 90);
 }
 
 
