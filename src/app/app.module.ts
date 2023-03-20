@@ -13,6 +13,20 @@ import {PlasticPageComponent} from "./comonents/tabs/plastic-windows/production/
 import {WindowsComponent} from "./comonents/tabs/plastic-windows/windows/windows.component";
 import {ModalComponent} from "./comonents/tabs/plastic-windows/windows/modal/modal.component";
 import {DoorsComponent} from "./comonents/tabs/doors/doors/doors.component";
+import {GratisModalComponent} from "./comonents/banner/gratis/gratis-modal/gratis-modal.component";
+import {SecurityDoorsComponent} from "./comonents/tabs/doors/security-doors/security-doors.component";
+import {BlindMainComponent} from "./comonents/tabs/blinds/blind-main/blind-main.component";
+import {RouterModule, Routes} from "@angular/router";
+
+const routes: Routes = [
+  {path: '', component: MainTabComponent, pathMatch: 'full'},
+  {path: 'muanyag-ablak', component: WindowsComponent},
+  {path: 'muanyag-ablak-production', component: PlasticPageComponent},
+  {path: 'muanyag-ajtok', component: DoorsComponent},
+  {path: 'biztonsagi-ajtok', component: SecurityDoorsComponent},
+
+  {path: '**', component: HomeComponent}
+];
 
 @NgModule({
   declarations: [
@@ -25,13 +39,17 @@ import {DoorsComponent} from "./comonents/tabs/doors/doors/doors.component";
     PlasticPageComponent,
     WindowsComponent,
     ModalComponent,
-    DoorsComponent
+    DoorsComponent,
+    GratisModalComponent,
+    SecurityDoorsComponent,
+    BlindMainComponent
   ],
   imports: [
     BrowserModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    RouterModule.forRoot(routes, {useHash: true}),
   ],
   exports: [],
   providers: [],

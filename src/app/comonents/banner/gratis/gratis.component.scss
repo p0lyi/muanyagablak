@@ -4,6 +4,8 @@
   border-radius: 10px;
   overflow: hidden;
   font-size: large;
+  display: flex;
+  justify-content: center;
 }
 
 .row{
@@ -15,18 +17,17 @@
   letter-spacing: 2px;
   width: 100%;
   height: 100%;
-  animation: csikmozgas 50s infinite linear;
+  display: flex;
+  justify-content: center;
 }
 
+.detail-btn{
+  width: 10%;
+  margin-left: 5%;
+}
 
+.detail-btn{
 
-@keyframes csikmozgas {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-200%);
-  }
 }
 
 

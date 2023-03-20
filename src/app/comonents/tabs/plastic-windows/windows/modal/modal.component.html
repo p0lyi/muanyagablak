@@ -109,8 +109,15 @@
   </div>
 </mat-dialog-content>
 <mat-dialog-actions align="center">
-  <img *ngIf="data.title==='v76' || data.title==='e76'" src="assets/images/deceunick-large.jpg">
-  <img *ngIf="data.title==='rd70' || data.title==='rs80'" src="assets/images/rehlogo-large.jpg">
+  <div class="end">
+    <div class="logo-end">
+      <img *ngIf="data.title==='v76' || data.title==='e76'" src="assets/images/deceunick-large.jpg">
+      <img *ngIf="data.title==='rd70' || data.title==='rs80'" src="assets/images/rehlogo-large.jpg">
+    </div>
+    <div class="button">
+      <button mat-button mat-dialog-close>Vissza</button>
+    </div>
+  </div>
   <br>
 </mat-dialog-actions>
 

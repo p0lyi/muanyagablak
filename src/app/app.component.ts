@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import * as AOS from "aos";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppComponent{
   title = 'muanyagablak';
+
+  constructor() {
+    //beuszas
+    AOS.init();
+    window.addEventListener('load',AOS.refresh);
+  }
 }

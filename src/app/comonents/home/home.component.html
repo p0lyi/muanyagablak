@@ -4,6 +4,8 @@
     <button class="tablinks" (click)="openCity($event, 'windows-prod')">Műanyag ablak gyártása</button>
     <button class="tablinks" (click)="openCity($event, 'windows')">Műanyag ablakok</button>
     <button class="tablinks" (click)="openCity($event, 'doors')">Műanyag bejárati ajtók</button>
+    <button class="tablinks" (click)="openCity($event, 'security-door')">Biztonsági ajtók</button>
+    <button class="tablinks" (click)="openCity($event, 'blinds')">Redőnyök</button>
     <app-tab-banner></app-tab-banner>
   </div>
 
@@ -27,6 +29,16 @@
   <div id="doors" class="tabcontent">
     <h1 style="color: #737c84">Műanyag bejárati ajtók</h1>
     <app-doors></app-doors>
+  </div>
+
+  <div id="security-door" class="tabcontent">
+    <h1 style="color: #737c84">Biztonsági ajtók</h1>
+    <app-security-doors></app-security-doors>
+  </div>
+
+  <div id="blinds" class="tabcontent">
+    <h1 style="color: #737c84">Redőnyök</h1>
+    <app-blind-main></app-blind-main>
   </div>
 
 

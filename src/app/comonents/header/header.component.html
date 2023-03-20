@@ -1,12 +1,84 @@
-<header>
+<nav class="navbar fixed-top navbar-expand-lg background headerText">
   <div class="container-fluid">
-    <a class="col-8 navbar-brand" href="#"><img class="logo" src="assets/images/kbb-otthon-2023-logo-nagy.jpg"></a>
-    <div class="col-4 trapezoid">
+    <a class="navbar-brand" href="#"><img class="logo" src="assets/images/kbb-otthon-2023-logo-nagy.jpg"
+                                          width="400"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menuitems" id="main_nav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown" id="myDropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{'MŰANYAG ABLAKOK' }}</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item"
+                   [routerLink]="['/muanyag-ablak-production']">{{'MŰANYAG ABLAKOK GYÁRTÁSA' }}</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/muanyag-ablak']">{{'MŰANYAG ABLAKOK' }}</a></li>
+
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown" id="myDropdown2">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{'MŰANYAG AJTÓK' }}</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/muanyag-ajtok']">{{'MŰANYAG BEJÁRATI AJTÓK' }}</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/biztonsagi-ajtok']">{{'BIZTONSÁGI AJTÓK' }}</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--      <ul class="navbar-nav">-->
+      <!--        <a class="nav-link" [routerLink]="['/galeria']">{{'MENU.GALLERY' }}</a>-->
+      <!--      </ul>-->
+      <!--      <ul class="navbar-nav">-->
+      <!--        <a class="nav-link" [routerLink]="['/kapcsolat']" >{{'MENU.CONTACT' }}</a>-->
+      <!--      </ul>-->
+
+    </div>
+    <div class=" trapezoid">
       <div class="arajanlat">
         <div>KÉRJE INGYENES FELMÉRÉSÜNKET!</div>
         <div>06-70-947-1761</div>
         <div>info@kbbablak.hu</div>
       </div>
     </div>
+    <!-- navbar-collapse.// -->
   </div>
-</header>
+  <!-- container-fluid.// -->
+</nav>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+// make it as accordion for smaller screens
+    if (window.innerWidth < 768) {
+
+      // close all inner dropdowns when parent is closed
+      document.querySelectorAll('.navbar .dropdown').forEach(function (everydropdown) {
+        everydropdown.addEventListener('hidden.bs.dropdown', function () {
+          // after dropdown is hidden, then find all submenus
+          this.querySelectorAll('.submenu').forEach(function (everysubmenu) {
+            // hide every submenu as well
+            everysubmenu.style.display = 'none';
+          });
+        })
+      });
+
+      document.querySelectorAll('.dropdown-menu a').forEach(function (element) {
+        element.addEventListener('click', function (e) {
+          let nextEl = this.nextElementSibling;
+          if (nextEl && nextEl.classList.contains('submenu')) {
+            // prevent opening link if link needs to open dropdown
+            e.preventDefault();
+            if (nextEl.style.display === 'block') {
+              nextEl.style.display = 'none';
+            } else {
+              nextEl.style.display = 'block';
+            }
+
+          }
+        });
+      })
+    }
+// end if innerWidth
+  });
+  // DOMContentLoaded  end
+</script>

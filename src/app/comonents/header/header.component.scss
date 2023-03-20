@@ -1,58 +1,66 @@
-.container-fluid{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+@media all and (min-width: 769px) {
+  .dropdown-menu{ position: relative; 	background-color: #e9e7e7; color: rgb(21,26,21)}
+  .dropdown-menu li{ position: relative; 	background-color: #e9e7e7;color: rgb(21,26,21)}
+  .dropdown-item{color: rgb(21,26,21);}
+  .dropdown-item:hover{color: rgb(21,26,21);background-color: #737c84;}
+  .nav-item .submenu{
+    display: none;
+    position: absolute;
+    left:100%; top:-7px;
+  }
+  .nav-item .submenu-left{
+    right:100%; left:auto;
+    color: rgb(21,26,21);
+  }
+  .dropdown-menu > li:hover{ background-color: #737c84;color:rgb(21,26,21);}
+  .dropdown-menu > li:hover > .submenu{ display: block; color:rgb(21,26,21);}
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 768px) {
+  .dropdown-menu .dropdown-menu{
+    margin-left:0.7rem;
+    margin-right:0.7rem;
+    margin-bottom: .5rem;
+  }
 }
 
-.logo{
-  min-width: 55%;
-  max-width: 70%;
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 995;
 }
 
-.navbar-brand{
-  margin-left: 3%;
+.navbar{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(87,87,90,1) 100%);
 }
 
 .arajanlat{
-  padding: 4%;
+  padding: 1%;
   color: white;
-  font-size: larger;
-  width: 235px;
+  font-size: large;
   text-align: start;
 }
 
 .trapezoid {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 100%);
-  padding-left: 25%;
-  border: solid #eb1d25;
-  background-color: rgb(87, 87, 90);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+  border: solid #eb1d25 ;
+  background: rgb(137, 137, 140);
+  background: linear-gradient(90deg, rgba(137, 137, 140, 0.25) 25%, rgb(87, 87, 90) 100%);
+  width: 31%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-
-
-
-element.style {
-}
-.trapezoid[_ngcontent-gmt-c12] {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 46% 100%);
-  padding-left: 25%;
-  border: solid #eb1d25;
-}
-
-.arajanlat[_ngcontent-gmt-c12] {
-  background-color: rgb(87, 87, 90);
-  padding: 1%;
-  color: white;
+.menuitems{
   font-size: larger;
-  width: 100%;
+  font-weight: bold;
 }
-
-
-
 
 
 

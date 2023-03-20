@@ -1,0 +1,18 @@
+.picture{
+  display: flex;
+  position: static;
+  justify-content: flex-end;
+}
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  font-size: xxx-large;
+  color: white;
+}
+
