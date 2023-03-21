@@ -1,41 +1,76 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="picture">
-      <div class="title">
-        Külső tokos redőnyök
-      </div>
-      <img src="assets/images/94a5e.jpg" width="725">
+    <div>
+      <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[0]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Külső tokos redőnyök</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[1]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Külső tokos redőnyök</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[2]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Külső tokos redőnyök</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[3]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Külső tokos redőnyök</h3>
+          </div>
+        </ng-template>
+      </ngb-carousel>
     </div>
   </div>
   <div class="explainText">
-    <p>A külső tokos redőnyök a legkeresettebb redőny típusok, mivel utólag gyakorlatilag bárhová telepíthetőek. Hatásos
+    <p class="text">A külső tokos redőnyök a legkeresettebb redőny típusok, mivel utólag
+      gyakorlatilag bárhová telepíthetőek. Hatásos
       védelmet biztosítanak a felmelegedés ellen, leengedett állapotban teljes fényzárást biztosítanak.</p>
     <div class="cardGroup">
       <div class="pic1">
         <div class="card">
           <div class="card-body">
-            <img class="card-img-top" src="assets/images/koln-tomor-large.jpg">
+            <img class="card-img-top" src="assets/images/muanyag-redony-234.jpg">
           </div>
-          <h3 class="card-title">Köln - tömör</h3>
+          <h3 class="card-title" style="font-size: larger;">Új típusú műanyag redőny - EasyPlast</h3>
+          <button class="btn-grad extra" (click)="openDialog('easy')">Részletek</button>
         </div>
       </div>
       <div class="pic2">
         <div class="card">
           <div class="card-body">
-            <img class="card-img-top" src="assets/images/koln-1-large.jpg">
+            <img class="card-img-top" src="assets/images/atenad-kompakt-redony.jpg">
           </div>
-          <h3 class="card-title">Köln Glas 1</h3>
+          <h3 class="card-title" style="font-size: larger;">Atenád kompakt alumínium redőny</h3>
+          <button class="btn-grad extra" (click)="openDialog('alu')">Részletek</button>
         </div>
       </div>
       <div class="pic3">
         <div class="card">
           <div class="card-body">
-            <img class="card-img-top" src="assets/images/koln-3-large.jpg">
+            <img class="card-img-top" src="assets/images/heroal-redony.jpg">
           </div>
-          <h3 class="card-title">Köln Glas 2</h3>
+          <h3 class="card-title" style="font-size: larger;">Heroal alumínium redőny</h3>
+          <button class="btn-grad extra" (click)="openDialog('heroal')">Részletek</button>
         </div>
       </div>
     </div>
 
   </div>
 </div>
+

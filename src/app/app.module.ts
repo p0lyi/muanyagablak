@@ -17,6 +17,9 @@ import {GratisModalComponent} from "./comonents/banner/gratis/gratis-modal/grati
 import {SecurityDoorsComponent} from "./comonents/tabs/doors/security-doors/security-doors.component";
 import {BlindMainComponent} from "./comonents/tabs/blinds/blind-main/blind-main.component";
 import {RouterModule, Routes} from "@angular/router";
+import {NgbCarouselModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {ReactiveFormsModule} from "@angular/forms";
+import {BlindModalComponent} from "./comonents/tabs/blinds/blind-main/blind-modal/blind-modal.component";
 
 const routes: Routes = [
   {path: '', component: MainTabComponent, pathMatch: 'full'},
@@ -43,7 +46,8 @@ const routes: Routes = [
     DoorsComponent,
     GratisModalComponent,
     SecurityDoorsComponent,
-    BlindMainComponent
+    BlindMainComponent,
+    BlindModalComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +55,9 @@ const routes: Routes = [
     BrowserAnimationsModule,
     AppMaterialModule,
     RouterModule.forRoot(routes, {useHash: true}),
+    NgbModule,
+    NgbCarouselModule,
+    ReactiveFormsModule
   ],
   exports: [],
   providers: [],

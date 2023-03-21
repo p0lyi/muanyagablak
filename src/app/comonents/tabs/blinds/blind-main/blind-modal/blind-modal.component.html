@@ -1,0 +1,103 @@
+<h1 mat-dialog-title style="text-transform: uppercase;">{{title}}</h1>
+<mat-dialog-content class="mat-typography">
+  <div class="easy" *ngIf="data.title==='easy'">
+    <div class="container-fluid">
+      <p>Az "Új típusú" redőny</p>
+      <div class="picture-details">
+        <img src="assets/images/muanyag-redony-234.jpg">
+        <div class="mutart">
+          <p><b>Műszaki tartalom:</b></p>
+          <ul>
+            <li>hajlított, gyárilag festett horganyzott vaslemez tok, alumínium tokvéggel (ACS, KOPI)</li>
+            <li>37 mm műanyag redőnyléc (felső 4-8 léc perforálatlan), gumis alumínium záróléccel és rejtett ütközővel</li>
+            <li>csapágyazott műanyag tengely</li>
+            <li>53x22 mm gumikéderrel ellátott műanyag lefutó</li>
+            <li>kézi, gurtnis működtetés (klasszikus automata, műanyag kivezető)</li>
+            <li>lefutó csavar takaró tükörgomb (6 db/redőny)</li>
+          </ul>
+        </div>
+        <div class="opcio">
+          <p><b>Opciók:</b></p>
+          <ul>
+            <li>Alumínium tok</li>
+            <li>40Ø fém tengely (fémcsapágyas tárcsa és dugó)</li>
+            <li>Színes redőnylécek</li>
+            <li>Felső kivezetés</li>
+            <li>Zsinóros működtetés</li>
+            <li>Arriterezés</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="alu" *ngIf="data.title==='alu'">
+    <div class="container-fluid">
+      <div class="picture-details">
+        <img src="assets/images/muanyag-redony-234.jpg">
+        <div class="mutart">
+          <p><b>Műszaki tartalom:</b></p>
+          <ul>
+            <li>gyári szerelőfedeles, hajlított alumínium zárt tok és tokvég</li>
+            <li>csapágyas Ø40 fémtengely, lécakasztó féderrel</li>
+            <li>53×22 mm gumikéderrel ellátott alumínium lefutó</li>
+            <li>37 mm-es alumínium léc - Heroal RS 37</li>
+            <li>gumis alumínium záróléc + rejtett ütköző</li>
+            <li>kézi, gurtnis működtetés (klasszikus automata, műanyag kefés kivezető)</li>
+          </ul>
+        </div>
+        <div class="opcio">
+          <p><b>Opciók:</b></p>
+          <ul>
+            <li>Felső kivezetés</li>
+            <li>Zsinóros működtetés</li>
+            <li>RAL szinterezés</li>
+            <li>Fautánzatú tok, lefutó és záróléc</li>
+            <li>ZRS 41 alumínium léc</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="heroal" *ngIf="data.title==='heroal'">
+    <div class="container-fluid">
+      <p>Az "Új típusú" redőny</p>
+      <div class="picture-details">
+        <img src="assets/images/heroal-redony.jpg">
+        <div class="mutart">
+          <p><b>Műszaki tartalom:</b></p>
+          <ul>
+            <li>gyári szerelőfedeles alumínium zárt tok és tokvég</li>
+            <li>csapágyas Ø40 fémtengely, lécakasztó féderrel</li>
+            <li>53×22 mm gumikéderrel ellátott alumínium lefutó</li>
+            <li>37 mm-es alumínium léc - heroal RS37</li>
+            <li>gumis alumínium záróléc + rejtett ütköző</li>
+            <li>kézi, gurtnis működtetés (klasszikus automata, műanyag kefés kivezető)</li>
+          </ul>
+        </div>
+        <div class="opcio">
+          <p><b>Opciók:</b></p>
+          <ul>
+            <li>RS 41 alumínium léc</li>
+            <li>Felső kivezetés</li>
+            <li>Zsinóros működtetés</li>
+            <li>Click Stop feltolásgátló rendszer</li>
+            <li>Fautánzatú tok és lefutó</li>
+            <li>RAL szinterezés</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+  <div class="end">
+    <div class="logo-end">
+      <img *ngIf="data.title==='v76' || data.title==='e76'" src="assets/images/deceunick-large.jpg">
+      <img *ngIf="data.title==='rd70' || data.title==='rs80'" src="assets/images/rehlogo-large.jpg">
+    </div>
+    <div class="button">
+      <button class="btn-grad" mat-dialog-close>Vissza</button>
+    </div>
+  </div>
+  <br>
+</mat-dialog-actions>
