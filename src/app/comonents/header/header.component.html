@@ -27,6 +27,15 @@
           </ul>
         </li>
       </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown" id="myDropdown3">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{'KIEGÉSZÍTŐK' }}</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" [routerLink]="['/redonyok']">{{'REDŐNYÖK' }}</a></li>
+<!--            <li><a class="dropdown-item" [routerLink]="['/biztonsagi-ajtok']">{{'BIZTONSÁGI AJTÓK' }}</a></li>-->
+          </ul>
+        </li>
+      </ul>
       <!--      <ul class="navbar-nav">-->
       <!--        <a class="nav-link" [routerLink]="['/galeria']">{{'MENU.GALLERY' }}</a>-->
       <!--      </ul>-->
@@ -43,9 +52,14 @@
       </div>
     </div>
     <!-- navbar-collapse.// -->
+
   </div>
   <!-- container-fluid.// -->
+
 </nav>
+<div class="gratis">
+  <app-gratis></app-gratis>
+</div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
 // make it as accordion for smaller screens

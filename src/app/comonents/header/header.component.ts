@@ -7,8 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  size:number = 700;
-
   constructor() { }
 
   ngOnInit(): void {

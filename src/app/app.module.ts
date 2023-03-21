@@ -24,6 +24,7 @@ const routes: Routes = [
   {path: 'muanyag-ablak-production', component: PlasticPageComponent},
   {path: 'muanyag-ajtok', component: DoorsComponent},
   {path: 'biztonsagi-ajtok', component: SecurityDoorsComponent},
+  {path: 'redonyok', component: BlindMainComponent},
 
   {path: '**', component: HomeComponent}
 ];

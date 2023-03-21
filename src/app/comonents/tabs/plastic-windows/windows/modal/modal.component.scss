@@ -26,3 +26,32 @@
 li {
   margin-top: 5px;
 }
+
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #B60C0E 0%, #690708  51%, #B60C0E  100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 100% auto;
+  color: white;
+  box-shadow: 0 0 20px #891f23;
+  border-radius: 10px;
+  display: block;
+  font-size: larger;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  font-weight:bold;
+  cursor: pointer;
+}

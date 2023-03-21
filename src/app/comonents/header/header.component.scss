@@ -36,7 +36,7 @@
 
 .navbar{
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(87,87,90,1) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 28%, rgba(87,87,90,1) 100%);
 }
 
 .arajanlat{
@@ -48,18 +48,27 @@
 
 .trapezoid {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
-  border: solid #eb1d25 ;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+  border: solid #eb1d25;
   background: rgb(137, 137, 140);
   background: linear-gradient(90deg, rgba(137, 137, 140, 0.25) 25%, rgb(87, 87, 90) 100%);
-  width: 31%;
+  width: 25%;
   display: flex;
   flex-direction: row-reverse;
+  padding: 4px;
 }
 
 .menuitems{
   font-size: larger;
   font-weight: bold;
+}
+
+.gratis{
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 
