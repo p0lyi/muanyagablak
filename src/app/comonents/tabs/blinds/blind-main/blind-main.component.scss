@@ -1,5 +1,6 @@
 .container-fluid{
   display: flex;
+  flex-direction: column;
 }
 
 .picture{
@@ -27,7 +28,13 @@
   justify-content: space-around;
   align-items: baseline;
 }
-
+.explainText-belso {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+}
 .cardGroup{
   display: flex;
   flex-direction: row;
@@ -63,5 +70,12 @@
   padding-left: 2%;
   text-align: justify;
   padding-right: 2%;
+}
+
+.kulso{
+  display: flex;
+}
+.belso{
+  display: flex;
 }
 

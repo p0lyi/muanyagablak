@@ -1,6 +1,8 @@
+<script src="blind-main.component.ts"></script>
 <div class="container-fluid">
-  <div class="row">
-    <div>
+  <div class="kulso">
+    <div class="row">
+
       <ngb-carousel *ngIf="images">
         <ng-template ngbSlide>
           <div class="picsum-img-wrapper">
@@ -36,41 +38,116 @@
         </ng-template>
       </ngb-carousel>
     </div>
-  </div>
-  <div class="explainText">
-    <p class="text">A külső tokos redőnyök a legkeresettebb redőny típusok, mivel utólag
-      gyakorlatilag bárhová telepíthetőek. Hatásos
-      védelmet biztosítanak a felmelegedés ellen, leengedett állapotban teljes fényzárást biztosítanak.</p>
-    <div class="cardGroup">
-      <div class="pic1">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="assets/images/muanyag-redony-234.jpg">
+
+    <div class="explainText">
+      <p class="text">A külső tokos redőnyök a legkeresettebb redőny típusok, mivel utólag
+        gyakorlatilag bárhová telepíthetőek. Hatásos
+        védelmet biztosítanak a felmelegedés ellen, leengedett állapotban teljes fényzárást biztosítanak.</p>
+      <div class="cardGroup">
+        <div class="pic1">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="assets/images/muanyag-redony-234.jpg">
+            </div>
+            <h3 class="card-title" style="font-size: larger;">Új típusú műanyag redőny - EasyPlast</h3>
+            <button class="btn-grad extra" (click)="openDialog('easy')">Részletek</button>
           </div>
-          <h3 class="card-title" style="font-size: larger;">Új típusú műanyag redőny - EasyPlast</h3>
-          <button class="btn-grad extra" (click)="openDialog('easy')">Részletek</button>
         </div>
-      </div>
-      <div class="pic2">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="assets/images/atenad-kompakt-redony.jpg">
+        <div class="pic2">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="assets/images/atenad-kompakt-redony.jpg">
+            </div>
+            <h3 class="card-title" style="font-size: larger;">Atenád kompakt alumínium redőny</h3>
+            <button class="btn-grad extra" (click)="openDialog('alu')">Részletek</button>
           </div>
-          <h3 class="card-title" style="font-size: larger;">Atenád kompakt alumínium redőny</h3>
-          <button class="btn-grad extra" (click)="openDialog('alu')">Részletek</button>
         </div>
-      </div>
-      <div class="pic3">
-        <div class="card">
-          <div class="card-body">
-            <img class="card-img-top" src="assets/images/heroal-redony.jpg">
+        <div class="pic3">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="assets/images/heroal-redony.jpg">
+            </div>
+            <h3 class="card-title" style="font-size: larger;">Heroal alumínium redőny</h3>
+            <button class="btn-grad extra" (click)="openDialog('heroal')">Részletek</button>
           </div>
-          <h3 class="card-title" style="font-size: larger;">Heroal alumínium redőny</h3>
-          <button class="btn-grad extra" (click)="openDialog('heroal')">Részletek</button>
         </div>
       </div>
     </div>
+  </div>
+  <br>
+  <br>
+  <div class="belso" data-aos="fade-left" data-aos-duration="1000">
+    <div class="row">
+      <ngb-carousel *ngIf="images2" style="display: block;max-width: 750px;">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images2[0]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Belső tokos redőnyök</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images2[1]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Exte Elite XT redőny</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images2[2]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Perfekt ST 200 RG redőny</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images2[3]" width="725" height="478"/>
+          </div>
+          <div class="carousel-caption" style="color: #040404; ">
+            <h3 style="background-color: rgba(	115, 124, 132, 0.5)">Perfekt AE 200 RG redőny</h3>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+    <div class="explainText-belso" >
+      <p class="text">Belső tokos redőnyök</p>
+      <div class="cardGroup">
+        <div class="pic1">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="assets/images/exte-elite-xt-large.jpg">
+            </div>
+            <h3 class="card-title" style="font-size: larger;">Exte Elite XT redőny</h3>
+            <button class="btn-grad extra" (click)="openDialog('exte')">Részletek</button>
+          </div>
+        </div>
+        <!--      <div class="pic2">-->
+        <!--        <div class="card">-->
+        <!--          <div class="card-body">-->
+        <!--            <img class="card-img-top" src="assets/images/atenad-kompakt-redony.jpg">-->
+        <!--          </div>-->
+        <!--          <h3 class="card-title" style="font-size: larger;">Atenád kompakt alumínium redőny</h3>-->
+        <!--          <button class="btn-grad extra" (click)="openDialog('alu')">Részletek</button>-->
+        <!--        </div>-->
+        <!--      </div>-->
+        <!--      <div class="pic3">-->
+        <!--        <div class="card">-->
+        <!--          <div class="card-body">-->
+        <!--            <img class="card-img-top" src="assets/images/heroal-redony.jpg">-->
+        <!--          </div>-->
+        <!--          <h3 class="card-title" style="font-size: larger;">Heroal alumínium redőny</h3>-->
+        <!--          <button class="btn-grad extra" (click)="openDialog('heroal')">Részletek</button>-->
+        <!--        </div>-->
+        <!--      </div>-->
+      </div>
+
+    </div>
 
   </div>
+  <br>
+  <br>
 </div>
-

@@ -32,6 +32,9 @@ export class BlindModalComponent implements OnInit {
       case "easy":
         this.title = "Új típusú műanyag redőny - EasyPlast";
         break;
+      case "exte":
+        this.title = "Exte Elite XT redőny";
+        break;
     }
     console.log("window component: " + this.data.title);
   }

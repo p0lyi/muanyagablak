@@ -20,6 +20,9 @@ import {RouterModule, Routes} from "@angular/router";
 import {NgbCarouselModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {ReactiveFormsModule} from "@angular/forms";
 import {BlindModalComponent} from "./comonents/tabs/blinds/blind-main/blind-modal/blind-modal.component";
+import {ShadesComponent} from "./comonents/tabs/shades/shades.component";
+import {NetsComponent} from "./comonents/tabs/nets/nets.component";
+import {VentilationComponent} from "./comonents/tabs/ventilation/ventilation.component";
 
 const routes: Routes = [
   {path: '', component: MainTabComponent, pathMatch: 'full'},
@@ -28,8 +31,11 @@ const routes: Routes = [
   {path: 'muanyag-ajtok', component: DoorsComponent},
   {path: 'biztonsagi-ajtok', component: SecurityDoorsComponent},
   {path: 'redonyok', component: BlindMainComponent},
+  {path: 'belso-arnyekolok', component: ShadesComponent},
+  {path: 'szunyoghalok', component: NetsComponent},
+  {path: 'szellozes', component: VentilationComponent},
 
-  {path: '**', component: HomeComponent}
+  {path: '**', component: MainTabComponent}
 ];
 
 @NgModule({
@@ -47,7 +53,10 @@ const routes: Routes = [
     GratisModalComponent,
     SecurityDoorsComponent,
     BlindMainComponent,
-    BlindModalComponent
+    BlindModalComponent,
+    ShadesComponent,
+    NetsComponent,
+    VentilationComponent
   ],
   imports: [
     BrowserModule,
